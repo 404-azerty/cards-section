@@ -90,7 +90,7 @@ p {
 .card img {
   display: block;
   margin: 0 0 0 auto;
-  width: 15vw;
+  width: 3rem;
 }
 
 /* Border cards */
@@ -119,4 +119,48 @@ footer.attribution {
 }
 footer.attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1443px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    background: pink;
+    padding-top: 6vh;
+  }
+
+  h3 + p {
+    width: 65vw;
+    margin: auto;
+  }
+
+  #cards,
+  #middle-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #middle-cards {
+    flex-wrap: wrap;
+    width: 25vw;
+  }
+
+  .card {
+    width: 25vw;
+    margin: 0;
+    padding: 1vh 1vw;
+  }
+
+  #middle-cards .card:first-child {
+    margin-bottom: 2vh;
+  }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
+  main {
+    background: powderblue;
+  }
 }
