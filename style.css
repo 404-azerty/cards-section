@@ -1,3 +1,117 @@
+/* General */
+
+/* font-family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* variables from style guide */
+:root {
+  /* primary colors */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* neutral colors */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  /* font */
+  --font-size: 15px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
+
+main {
+  min-height: 100vh;
+  background-color: var(--very-light-gray);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--very-dark-blue);
+  padding: 10vh 8vw;
+}
+
+/* Top section */
+
+h2,
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: var(--font-weight-light);
+  margin-bottom: 1vh;
+}
+
+h3 {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2vh;
+}
+
+h3 + p {
+  text-align: center;
+}
+
+p {
+  color: var(--grayish-blue);
+  line-height: 1.5rem;
+}
+
+/* Cards */
+
+#cards {
+  margin: 10vh 0;
+}
+
+.card {
+  margin: 4vh 0;
+  padding: 5vh 8vw;
+  background-color: white;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 8px 0px hsla(212, 49%, 46%, 0.25);
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2vh;
+}
+
+.card p {
+  font-size: 0.84rem;
+  margin-bottom: 5vh;
+}
+
+.card img {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+/* Border cards */
+
+#cards > .card:first-child {
+  border-top: 4px solid var(--cyan);
+}
+
+#middle-cards > .card:first-child {
+  border-top: 4px solid var(--red);
+}
+
+#middle-cards > .card:last-child {
+  border-top: 4px solid var(--orange);
+}
+
+#cards > .card:last-child {
+  border-top: 4px solid var(--blue);
+}
+
+/* Footer page */
+
 footer.attribution {
   font-size: 11px;
   text-align: center;
