@@ -125,7 +125,7 @@ footer.attribution a {
 
 /* Tablet (optional)*/
 
-@media only screen and (min-width: 768px) and (max-width: 1443px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   main {
     padding-top: 6vh;
   }
@@ -161,7 +161,7 @@ footer.attribution a {
 
 /* Laptop */
 
-@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   main {
     padding-top: 9.4vh;
   }
