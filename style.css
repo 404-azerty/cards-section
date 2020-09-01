@@ -1,7 +1,7 @@
 /* General */
 
 /* font-family */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 /* variables from style guide */
 :root {
@@ -18,7 +18,7 @@
 
   /* font */
   --font-size: 15px;
-  --font-family: "Poppins", sans-serif;
+  --font-family: 'Poppins', sans-serif;
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-bold: 600;
@@ -123,10 +123,10 @@ footer.attribution a {
 
 /* Media queries */
 
-/* Tablet */
+/* Tablet (optional)*/
+
 @media only screen and (min-width: 768px) and (max-width: 1443px) and (-webkit-min-device-pixel-ratio: 1) {
   main {
-    background: pink;
     padding-top: 6vh;
   }
 
@@ -151,6 +151,7 @@ footer.attribution a {
     width: 25vw;
     margin: 0;
     padding: 1vh 1vw;
+    box-shadow: 0px 16px 24px 0px hsla(212, 49%, 46%, 0.15);
   }
 
   #middle-cards .card:first-child {
@@ -159,8 +160,56 @@ footer.attribution a {
 }
 
 /* Laptop */
+
 @media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   main {
-    background: powderblue;
+    padding-top: 9.4vh;
+  }
+
+  h2,
+  h3 {
+    font-size: 2.25rem;
+    letter-spacing: 0.02rem;
+  }
+
+  h2 {
+    margin-bottom: 1.75vh;
+  }
+
+  h3 {
+    margin-bottom: 2.5vh;
+  }
+
+  h3 + p {
+    width: 38vw;
+  }
+
+  #cards {
+    margin: 7vh 1vw;
+  }
+
+  #middle-cards {
+    width: 24.5vw;
+  }
+
+  .card {
+    padding: 3.5vh 2.3vw;
+    width: 24.5vw;
+  }
+
+  .card h4 {
+    margin-bottom: 1.5vh;
+  }
+
+  .card p {
+    line-height: 1.5rem;
+  }
+
+  .card img {
+    width: 4rem;
+  }
+
+  #middle-cards .card:first-child {
+    margin-bottom: 3.5vh;
   }
 }
